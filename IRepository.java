@@ -5,13 +5,13 @@ public interface IRepository{
     default void create(Member id){
         throw new RuntimeException("..");
     }
-    default  void read(Member id){
+    default Member read(Member id){
         throw new RuntimeException("..");
     }
     default  void delete(Member id){
         throw new RuntimeException("..");
     }
-    default  void update(Member email){
+    default  Member update(Integer id, Integer newId){
         throw new RuntimeException("...");
     }
 }
