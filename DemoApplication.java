@@ -17,6 +17,7 @@ public class DemoApplication {
 
          memberRepository.create(member2);
          memberRepository.delete(member1);
+         memberRepository.create(member3);
 
 
 
