@@ -1,17 +1,17 @@
 package com.sprint.mission;
 
-public interface IRepository{
+public interface IRepository<T,V> {
 
-    default void create(Member id){
+    default void create(T id){
         throw new RuntimeException("..");
     }
-    default Member read(Member id){
+    default T read(T id){
         throw new RuntimeException("..");
     }
-    default  void delete(Member id){
+    default  void delete(T id){
         throw new RuntimeException("..");
     }
-    default  Member update(Integer id, Integer newId){
+    default  T update(Integer id, Integer newId){
         throw new RuntimeException("...");
     }
 }
